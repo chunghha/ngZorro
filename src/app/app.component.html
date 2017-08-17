@@ -57,7 +57,6 @@
         <nz-breadcrumb-item>Bill</nz-breadcrumb-item>
       </nz-breadcrumb>
       <div style="padding:24px; background: #fff; min-height: 360px;">
-        Bill is a cat.
         <nz-timeline>
           <nz-timeline-item>Create a services site 2015-09-01</nz-timeline-item>
           <nz-timeline-item>Solve initial network problems 2015-09-01</nz-timeline-item>
@@ -69,8 +68,7 @@
           </nz-timeline-item>
           <nz-timeline-item>Network problems being solved 2015-09-01</nz-timeline-item>
         </nz-timeline>
-        <br><br>
-        <nz-table #nzTable [nzDataSource]="data" [nzPageSize]="10" (nzDataChange)="_displayDataChange($event)" (nzPageIndexChange)="_refreshStatus()"
+        <nz-table #nzTable [nzSize]="'middle'" [nzDataSource]="data" [nzPageSize]="10" (nzDataChange)="_displayDataChange($event)" (nzPageIndexChange)="_refreshStatus()"
           (nzPageSizeChange)="_refreshStatus()">
           <thead nz-thead>
             <tr>
