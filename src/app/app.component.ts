@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, VERSION} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +7,9 @@ import {Component, OnInit} from '@angular/core';
 })
 export class AppComponent implements OnInit {
   isCollapsed = false;
+  isVisible = false;
   current = 1;
+  ngVersion = VERSION.full;
 
   _allChecked = false;
   _indeterminate = false;
@@ -56,6 +58,20 @@ export class AppComponent implements OnInit {
       });
     }
     this._refreshStatus();
+  }
+
+  showModal = () => {
+    this.isVisible = true;
+  }
+
+  handleOk = (e) => {
+    console.log('Click OK');
+    this.isVisible = false;
+  }
+
+  handleCancel = (e) => {
+    console.log(e);
+    this.isVisible = false;
   }
 
   constructor() {}
