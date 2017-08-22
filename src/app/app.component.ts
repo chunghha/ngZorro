@@ -1,10 +1,13 @@
 import {Component, OnInit, VERSION} from '@angular/core';
 import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 
+import {RandomUserService} from './services/random-user.service';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  providers: [RandomUserService]
 })
 export class AppComponent implements OnInit {
   validateForm: FormGroup;
@@ -13,6 +16,12 @@ export class AppComponent implements OnInit {
   isVisible = false;
   current = 1;
   ngVersion = VERSION.full;
+
+  _current = 1;
+  _pageSize = 10;
+  _total = 1;
+  _dataSet = [];
+  _loading = true;
 
   _allChecked = false;
   _indeterminate = false;
@@ -37,6 +46,15 @@ export class AppComponent implements OnInit {
       address: 'Sidney No. 1 Lake Park',
     }
   ];
+
+  _refreshData = () => {
+    this._loading = true;
+    this._randomUser.getUsers(this._current, this._pageSize).subscribe((data: any) => {
+      this._loading = false;
+      this._total = 200;
+      this._dataSet = data.results;
+    })
+  };
 
   _submitForm() {
     for (const i in this.validateForm.controls) {
@@ -86,7 +104,7 @@ export class AppComponent implements OnInit {
         this.isVisible = false;
       }
 
-  constructor(private fb: FormBuilder) {}
+  constructor(private fb: FormBuilder, private _randomUser: RandomUserService) {}
 
   updateConfirmValidator() {
     /** wait for refresh value */
@@ -119,6 +137,8 @@ export class AppComponent implements OnInit {
       captcha          : [ null, [ Validators.required ] ],
       agree            : [ false ]
     });
+
+    this._refreshData();
   }
 
   getFormControl(name) {
