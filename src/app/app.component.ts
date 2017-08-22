@@ -53,8 +53,8 @@ export class AppComponent implements OnInit {
       this._loading = false;
       this._total = 200;
       this._dataSet = data.results;
-    })
-  };
+    });
+  }
 
   _submitForm() {
     for (const i in this.validateForm.controls) {

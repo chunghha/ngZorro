@@ -97,12 +97,14 @@
             <nz-table #nzTable
             [nzAjaxData]="_dataSet"
             [nzShowSizeChanger]="true"
+            [nzShowTotal]="true"
             [nzLoading]="_loading"
             [nzTotal]="_total"
             [(nzPageIndex)]="_current"
             (nzPageIndexChange)="_refreshData()"
             [(nzPageSize)]="_pageSize"
-            (nzPageSizeChange)="_refreshData()">
+            (nzPageSizeChange)="_refreshData()"
+            [nzSize]="'small'">
             <thead nz-thead>
               <tr>
                 <th nz-th><span>Name</span></th>
