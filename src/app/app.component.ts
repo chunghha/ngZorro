@@ -60,19 +60,22 @@ export class AppComponent implements OnInit {
     this._refreshStatus();
   }
 
-  showModal = () => {
-    this.isVisible = true;
-  }
+  showModal =
+      () => {
+        this.isVisible = true;
+      }
 
-  handleOk = (e) => {
-    console.log('Click OK');
-    this.isVisible = false;
-  }
+  handleOk =
+      (e) => {
+        console.log('Click OK');
+        this.isVisible = false;
+      }
 
-  handleCancel = (e) => {
-    console.log(e);
-    this.isVisible = false;
-  }
+  handleCancel =
+      (e) => {
+        console.log(e);
+        this.isVisible = false;
+      }
 
   constructor() {}
 
