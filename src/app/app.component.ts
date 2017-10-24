@@ -58,7 +58,9 @@ export class AppComponent implements OnInit {
 
   _submitForm() {
     for (const i in this.validateForm.controls) {
-      this.validateForm.controls[ i ].markAsDirty();
+      if (!!this.validateForm.controls[i]) {
+        this.validateForm.controls[ i ].markAsDirty();
+      }
     }
   }
 
