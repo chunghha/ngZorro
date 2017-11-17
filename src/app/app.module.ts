@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-import { NgZorroAntdModule } from 'ng-zorro-antd';
+import { NgZorroAntdModule, NZ_LOCALE, enUS } from 'ng-zorro-antd';
 
 import { AppComponent } from './app.component';
 
@@ -22,7 +22,9 @@ import { AppComponent } from './app.component';
     ReactiveFormsModule,
     NgZorroAntdModule.forRoot()
   ],
-  providers: [],
+  providers: [
+    { provide: NZ_LOCALE, useValue: enUS }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
