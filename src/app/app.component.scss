@@ -30,3 +30,15 @@
   color: #108ee9;
 }
 
+:host ::ng-deep .ant-back-top-inner {
+  margin-left: 12px;
+  height: 24px;
+  width: 64px;
+  line-height: 24px;
+  border-radius: 4px;
+  background-color: #1088e9;
+  color: #fff;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
