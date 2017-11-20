@@ -121,6 +121,12 @@
             </ng-template>
             <app-card></app-card>
           </nz-tab>
+          <nz-tab>
+            <ng-template #nzTabHeading>
+              Calendar
+            </ng-template>
+            <nz-calendar [nzLocale]="'en'"></nz-calendar>
+          </nz-tab>
         </nz-tabset>
       </div>
     </nz-content>
