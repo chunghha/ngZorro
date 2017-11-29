@@ -4,8 +4,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { NgZorroAntdModule, NZ_LOCALE, enUS } from 'ng-zorro-antd';
+import { G2ChartModule } from 'g2-angular';
 
 import { CardComponent } from './card.component';
+import { ChartComponent } from './chart.component';
 import { FormComponent } from './form.component';
 import { StepsComponent } from './steps.component';
 import { TableComponent } from './table.component';
@@ -15,6 +17,7 @@ import { RandomUserService } from '../services/random-user.service';
 @NgModule({
   declarations: [
     CardComponent,
+    ChartComponent,
     FormComponent,
     StepsComponent,
     TableComponent,
@@ -25,10 +28,12 @@ import { RandomUserService } from '../services/random-user.service';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    NgZorroAntdModule
+    NgZorroAntdModule,
+    G2ChartModule.forRoot()
   ],
   exports: [
     CardComponent,
+    ChartComponent,
     FormComponent,
     StepsComponent,
     TableComponent,
