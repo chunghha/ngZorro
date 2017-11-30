@@ -1,43 +1,66 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
+$font-family: "Lato";
+$font-size: 1rem;
+$footer-font-size: 1rem * 0.9;
+
 body {
-  font-size: 14px !important;
-  font-family: "Lato" !important;
+  font-size: $font-size !important;
+  font-family: $font-family !important;
 }
 
 label {
-  font-size: 14px !important;
+  font-size: $font-size !important;
 }
 
 .ant-breadcrumb {
-  font-size: 14px !important;
-  font-family: "Lato" !important;
+  font-size: $font-size !important;
+  font-family: $font-family !important;
 }
 
 .ant-btn {
-  font-size: 14px !important;
-  font-family: "Lato" !important;
+  font-size: $font-size !important;
+  font-family: $font-family !important;
+}
+
+.ant-fullcalendar-table {
+  font-size: $font-size !important;
+  font-family: $font-family !important;
 }
 
 .ant-input {
-  font-size: 14px !important;
+  font-size: $font-size !important;
+}
+
+.ant-layout-footer {
+  font-size: $footer-font-size !important;
+}
+
+.ant-menu .nav-text {
+  font-size: $font-size !important;
+  font-family: $font-family !important;
+}
+
+.ant-menu-item {
+  font-size: $font-size !important;
+  font-family: $font-family !important;
 }
 
 .ant-menu-submenu {
-  font-size: 14px !important;
-  font-family: "Lato" !important;
+  font-size: $font-size !important;
+  font-family: $font-family !important;
 }
 
 .ant-modal {
-  font-size: 14px !important;
+  font-size: $font-size !important;
 }
 
 .ant-table {
-  font-size: 14px !important;
-  font-family: "Lato" !important;
+  font-size: $font-size !important;
+  font-family: $font-family !important;
 }
 
 .ant-timeline-item-content {
-  font-size: 14px !important;
-  font-family: "Lato" !important;
+  font-size: $font-size !important;
+  font-family: $font-family !important;
 }
