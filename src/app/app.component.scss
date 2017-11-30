@@ -9,7 +9,7 @@
   display: none;
 }
 
-:host ::ng-deep .ant-layout-sider-collapsed .ant-menu-submenu-title:after {
+:host ::ng-deep .ant-layout-sider-collapsed .ant-menu-submenu-title::after {
   display: none;
 }
 
@@ -23,7 +23,7 @@
   line-height: 64px;
   padding: 0 16px;
   cursor: pointer;
-  transition: color .3s;
+  transition: color 0.3s;
 }
 
 :host ::ng-deep .trigger:hover {
