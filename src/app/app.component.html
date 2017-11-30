@@ -36,6 +36,11 @@
   <nz-layout>
     <nz-header style="background: #fff; padding:0;">
       <i class="anticon trigger" [class.anticon-menu-fold]="!isCollapsed" [class.anticon-menu-unfold]="isCollapsed" (click)="isCollapsed=!isCollapsed"></i>
+      <div nz-row [nzType]="'flex'" [nzJustify]="'end'">
+        <nz-badge [nzCount]="5" style="margin-right: 24px;">
+          <ng-template #content><nz-avatar nzIcon="user" [nzShape]="'square'"></nz-avatar></ng-template>
+        </nz-badge>
+      </div>
     </nz-header>
     <div>
       <ul nz-menu [nzMode]="'horizontal'">
