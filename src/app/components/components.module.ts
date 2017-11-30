@@ -7,6 +7,7 @@ import { NgZorroAntdModule, NZ_LOCALE, enUS } from 'ng-zorro-antd';
 import { G2ChartModule } from 'g2-angular';
 
 import { CardComponent } from './card.component';
+import { CarouselComponent } from './carousel.component';
 import { ChartComponent } from './chart.component';
 import { FormComponent } from './form.component';
 import { StepsComponent } from './steps.component';
@@ -18,6 +19,7 @@ import { RandomUserService } from '../services/random-user.service';
   declarations: [
     CardComponent,
     ChartComponent,
+    CarouselComponent,
     FormComponent,
     StepsComponent,
     TableComponent,
@@ -33,6 +35,7 @@ import { RandomUserService } from '../services/random-user.service';
   ],
   exports: [
     CardComponent,
+    CarouselComponent,
     ChartComponent,
     FormComponent,
     StepsComponent,
