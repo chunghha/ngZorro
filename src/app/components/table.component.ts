@@ -33,6 +33,7 @@ export class TableComponent implements OnInit {
 
   _current = 1;
   _pageSize = 10;
+  _size = 'middle';
   _total = 1;
   _dataSet = [];
   _loading = true;
