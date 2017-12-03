@@ -1,5 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 
+import {NzMessageService} from 'ng-zorro-antd';
+
 import {RandomUserService} from '../services/random-user.service';
 
 @Component({
@@ -93,7 +95,15 @@ export class TableComponent implements OnInit {
     });
   }
 
-  constructor(private _randomUser: RandomUserService) {}
+  cancel() {
+    this.message.info('click cancel');
+  }
+
+  confirm() {
+    this.message.info('click confirm');
+  }
+
+  constructor(private _randomUser: RandomUserService, private message: NzMessageService) {}
 
   ngOnInit() {
     this.refreshData();

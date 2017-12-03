@@ -49,7 +49,9 @@
       <td nz-td>{{ data.email }}</td>
       <td nz-td>
         <span>
-          <a href="#">Delete</a>
+          <nz-popconfirm [nzTitle]="'Are you sure？'" [nzOkText]="'ok'" [nzCancelText]="'cancel'" (nzOnConfirm)="confirm()" (nzOnCancel)="cancel()">
+              <a nz-popconfirm>Delete</a>
+          </nz-popconfirm>
         </span>
       </td>
     </tr>
