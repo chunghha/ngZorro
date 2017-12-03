@@ -12,26 +12,8 @@ export class TableComponent implements OnInit {
   _allChecked = false;
   _indeterminate = false;
   _displayData = [];
-  data = [
-    {
-      key: '1',
-      name: 'John Brown',
-      age: 32,
-      address: 'New York No. 1 Lake Park',
-    },
-    {
-      key: '2',
-      name: 'Jim Green',
-      age: 42,
-      address: 'London No. 1 Lake Park',
-    },
-    {
-      key: '3',
-      name: 'Joe Black',
-      age: 32,
-      address: 'Sidney No. 1 Lake Park',
-    }
-  ];
+  editRow = null;
+  tempEditObject = {};
 
   _current = 1;
   _pageSize = 10;
@@ -95,12 +77,19 @@ export class TableComponent implements OnInit {
     });
   }
 
-  cancel() {
-    this.message.info('click cancel');
+  edit(data) {
+    this.tempEditObject[ data.email ] = { ...data };
+    this.editRow = data.email;
   }
 
-  confirm() {
-    this.message.info('click confirm');
+  save(data) {
+    Object.assign(data, this.tempEditObject[ data.email ]);
+    this.editRow = null;
+  }
+
+  cancel(data) {
+    this.tempEditObject[ data.email ] = {};
+    this.editRow = null;
   }
 
   constructor(private _randomUser: RandomUserService, private message: NzMessageService) {}

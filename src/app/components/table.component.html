@@ -46,12 +46,22 @@
         <a>{{ data.name.first }} {{ data.name.last }}</a>
       </td>
       <td nz-td>{{ data.gender }}</td>
-      <td nz-td>{{ data.email }}</td>
       <td nz-td>
-        <span>
-          <nz-popconfirm [nzTitle]="'Are you sure？'" [nzOkText]="'ok'" [nzCancelText]="'cancel'" (nzOnConfirm)="confirm()" (nzOnCancel)="cancel()">
-              <a nz-popconfirm>Delete</a>
-          </nz-popconfirm>
+        <span *ngIf="editRow!==data.email">{{data.email}}</span>
+        <span *ngIf="editRow===data.email">
+          <nz-input [(ngModel)]="tempEditObject[data.email].email"></nz-input>
+        </span>
+      </td>
+      <td nz-td>
+        <span *ngIf="editRow!==data.email">
+          <a (click)="edit(data)">Edit</a>
+        </span>
+        <span *ngIf="editRow===data.email">
+          <a (click)="save(data)">Save</a>
+          <span nz-table-divider></span>
+            <nz-popconfirm [nzTitle]="'Sure to cancel?'" (nzOnConfirm)="cancel(data)">
+              <a nz-popconfirm>Cancel</a>
+            </nz-popconfirm>
         </span>
       </td>
     </tr>
