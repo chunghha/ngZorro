@@ -54,7 +54,9 @@
       </td>
       <td nz-td>
         <span *ngIf="editRow!==data.email">
-          <a (click)="edit(data)">Edit</a>
+          <button nz-button [nzSize]="'small'" [nzType]="'default'" (click)="edit(data)">
+            <i class="anticon anticon-edit"></i><span>Edit</span>
+          </button>
         </span>
         <span *ngIf="editRow===data.email">
           <a (click)="save(data)">Save</a>
