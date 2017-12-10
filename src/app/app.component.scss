@@ -1,3 +1,5 @@
+$primary-color: #1890ff;
+
 :host ::ng-deep .logo {
   height: 32px;
   background: #f7f7f7;
@@ -27,7 +29,11 @@
 }
 
 :host ::ng-deep .trigger:hover {
-  color: #108ee9;
+  color: $primary-color;
+}
+
+:host ::ng-deep .ant-back-top {
+  bottom: 6px;
 }
 
 :host ::ng-deep .ant-back-top-inner {
@@ -36,7 +42,7 @@
   width: 64px;
   line-height: 24px;
   border-radius: 4px;
-  background-color: #1088e9;
+  background-color: $primary-color;
   color: #fff;
   text-align: center;
   font-size: 0.8rem;
