@@ -47,7 +47,7 @@
       </td>
       <td nz-td>{{ data.gender }}</td>
       <td nz-td>
-        <span *ngIf="editRow!==data.email">{{data.email}}</span>
+        <span *ngIf="editRow!==data.email">{{ data.email }}</span>
         <span *ngIf="editRow===data.email">
           <nz-input [(ngModel)]="tempEditObject[data.email].email"></nz-input>
         </span>
