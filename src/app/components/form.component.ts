@@ -8,6 +8,14 @@ import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 export class FormComponent implements OnInit {
   validateForm: FormGroup;
 
+  marks = {
+    0  : 'A',
+    25 : 'B',
+    50 : 'C',
+    75 : 'D',
+    100: 'E'
+  };
+
   _submitForm() {
     for (const i in this.validateForm.controls) {
       if (!!this.validateForm.controls[i]) {
@@ -45,6 +53,9 @@ export class FormComponent implements OnInit {
       nickname         : [ null, [ Validators.required ] ],
       phoneNumberPrefix: [ '+86' ],
       phoneNumber      : [ null, [ Validators.required ] ],
+      status           : [ null, [ Validators.required ] ],
+      switch           : [ null, ],
+      slider           : [ null, ],
       website          : [ null, [ Validators.required ] ],
       captcha          : [ null, [ Validators.required ] ],
       agree            : [ false ]
