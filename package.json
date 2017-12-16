@@ -31,7 +31,7 @@
     "core-js": "^2.5.3",
     "g2": "^2.3.13",
     "g2-angular": "^1.0.2",
-    "ng-zorro-antd": "^0.6.6",
+    "ng-zorro-antd": "^0.6.7",
     "rxjs": "^5.5.5",
     "zone.js": "^0.8.18"
   },
@@ -57,9 +57,9 @@
     "lint-staged": "^6.0.0",
     "npm-run-all": "^4.1.2",
     "protractor": "~5.2.2",
-    "stylelint": "^8.3.1",
+    "stylelint": "^8.4.0",
     "stylelint-config-standard": "^18.0.0",
-    "ts-node": "~4.0.1",
+    "ts-node": "~4.0.2",
     "tslint": "~5.8.0",
     "typescript": "~2.6.2"
   }
