@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-import { NgZorroAntdModule, NZ_LOCALE, enUS } from 'ng-zorro-antd';
+import { NgZorroAntdModule, NZ_I18N, en_US } from 'ng-zorro-antd';
 import { G2ChartModule } from 'g2-angular';
 
 import { CardComponent } from './card.component';
@@ -22,7 +22,6 @@ import { RandomUserService } from '../services/random-user.service';
     CarouselComponent,
     FormComponent,
     StepsComponent,
-    TableComponent,
     TimelineComponent
   ],
   imports: [
@@ -39,11 +38,10 @@ import { RandomUserService } from '../services/random-user.service';
     ChartComponent,
     FormComponent,
     StepsComponent,
-    TableComponent,
     TimelineComponent
   ],
   providers: [
-    { provide: NZ_LOCALE, useValue: enUS },
+    { provide: NZ_I18N, useValue: en_US },
     RandomUserService
   ]
 })

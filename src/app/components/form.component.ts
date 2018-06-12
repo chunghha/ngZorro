@@ -8,44 +8,34 @@ import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 export class FormComponent implements OnInit {
   validateForm: FormGroup;
 
-  marks = {
-    0  : 'A',
-    25 : 'B',
-    50 : 'C',
-    75 : 'D',
-    100: 'E'
-  };
-
-  _submitForm() {
+  submitForm(): void {
     for (const i in this.validateForm.controls) {
-      if (!!this.validateForm.controls[i]) {
-        this.validateForm.controls[ i ].markAsDirty();
-      }
+      this.validateForm.controls[ i ].markAsDirty();
+      this.validateForm.controls[ i ].updateValueAndValidity();
     }
   }
 
-  constructor(private fb: FormBuilder) {}
-
-  updateConfirmValidator() {
+  updateConfirmValidator(): void {
     /** wait for refresh value */
-    setTimeout(_ => {
-      this.validateForm.controls[ 'checkPassword' ].updateValueAndValidity();
-    });
+    Promise.resolve().then(() => this.validateForm.controls.checkPassword.updateValueAndValidity());
   }
 
   confirmationValidator = (control: FormControl): { [s: string]: boolean } => {
     if (!control.value) {
       return { required: true };
-    } else if (control.value !== this.validateForm.controls[ 'password' ].value) {
+    } else if (control.value !== this.validateForm.controls.password.value) {
       return { confirm: true, error: true };
     }
   }
 
-  getCaptcha(e: MouseEvent) {
+  getCaptcha(e: MouseEvent): void {
     e.preventDefault();
   }
 
-  ngOnInit() {
+  constructor(private fb: FormBuilder) {
+  }
+
+  ngOnInit(): void {
     this.validateForm = this.fb.group({
       email            : [ null, [ Validators.email ] ],
       password         : [ null, [ Validators.required ] ],
@@ -53,16 +43,9 @@ export class FormComponent implements OnInit {
       nickname         : [ null, [ Validators.required ] ],
       phoneNumberPrefix: [ '+86' ],
       phoneNumber      : [ null, [ Validators.required ] ],
-      status           : [ null, [ Validators.required ] ],
-      switch           : [ null, ],
-      slider           : [ null, ],
       website          : [ null, [ Validators.required ] ],
       captcha          : [ null, [ Validators.required ] ],
       agree            : [ false ]
     });
-  }
-
-  getFormControl(name) {
-    return this.validateForm.controls[ name ];
   }
 }

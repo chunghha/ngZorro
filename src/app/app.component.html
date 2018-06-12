@@ -1,5 +1,3 @@
-<nz-root [nzExtraFontName]="'anticon'" [nzExtraFontUrl]="'./assets/fonts/iconfont'">
-</nz-root>
 <nz-layout>
   <nz-sider nzCollapsible [(nzCollapsed)]="isCollapsed">
     <div class="logo"></div>
@@ -46,7 +44,7 @@
       <ul nz-menu [nzMode]="'horizontal'">
         <li nz-menu-item>
           <i class="anticon anticon-mail"></i> Navigation One</li>
-        <li nz-menu-item [nzDisable]="true">
+        <li nz-menu-item>
           <i class="anticon anticon-appstore"></i> Navigation Two</li>
         <li nz-submenu>
           <span title>
@@ -78,10 +76,7 @@
       </div>
       <div style="padding:24px; background: #fff; min-height: 74vh;">
         <nz-tabset [nzTabPosition]="'top'" [nzType]="'line'">
-          <nz-tab>
-            <ng-template #nzTabHeading>
-              Timeline
-            </ng-template>
+          <nz-tab nzTitle="Timeline">
             <div nz-row>
               <div nz-col [nzSpan]="18" [nzPush]="6">
                 <app-timeline></app-timeline>
@@ -100,46 +95,22 @@
               </div>
             </div>
           </nz-tab>
-          <nz-tab>
-            <ng-template #nzTabHeading>
-              Table
-            </ng-template>
-            <app-table></app-table>
-          </nz-tab>
-          <nz-tab>
-            <ng-template #nzTabHeading>
-              Steps
-            </ng-template>
+          <nz-tab nzTitle="Steps">
             <app-steps></app-steps>
           </nz-tab>
-          <nz-tab>
-            <ng-template #nzTabHeading>
-              Form
-            </ng-template>
+          <nz-tab nzTitle="Form">
             <app-form></app-form>
           </nz-tab>
-          <nz-tab>
-            <ng-template #nzTabHeading>
-              Card
-            </ng-template>
+          <nz-tab nzTitle="Card">
             <app-card></app-card>
           </nz-tab>
-          <nz-tab>
-            <ng-template #nzTabHeading>
-              Calendar
-            </ng-template>
-            <nz-calendar [nzLocale]="'en'"></nz-calendar>
+          <nz-tab nzTitle="Calendar">
+            <nz-calendar></nz-calendar>
           </nz-tab>
-          <nz-tab>
-            <ng-template #nzTabHeading>
-              Carousel
-            </ng-template>
+          <nz-tab nzTitle="Carousel">
             <app-carousel></app-carousel>
           </nz-tab>
-          <nz-tab>
-            <ng-template #nzTabHeading>
-              Chart
-            </ng-template>
+          <nz-tab nzTitle="Chart">
             <app-chart></app-chart>
           </nz-tab>
         </nz-tabset>
