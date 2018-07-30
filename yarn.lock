@@ -2,22 +2,22 @@
 # yarn lockfile v1
 
 
-"@angular-devkit/architect@0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/architect/-/architect-0.7.0.tgz#74188e025377900e2757b6c691339e67c01b9ef5"
+"@angular-devkit/architect@0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/architect/-/architect-0.7.1.tgz#c1e999f6565e4596d0912ea30c190981f79a9481"
   dependencies:
-    "@angular-devkit/core" "0.7.0"
+    "@angular-devkit/core" "0.7.1"
     rxjs "^6.0.0"
 
-"@angular-devkit/build-angular@~0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/build-angular/-/build-angular-0.7.0.tgz#c8382117056df5405eec27f104679e086a17a058"
+"@angular-devkit/build-angular@~0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/build-angular/-/build-angular-0.7.1.tgz#797d78a5eb7d275cbe2b2bc90ca82285888c5a96"
   dependencies:
-    "@angular-devkit/architect" "0.7.0"
-    "@angular-devkit/build-optimizer" "0.7.0"
-    "@angular-devkit/build-webpack" "0.7.0"
-    "@angular-devkit/core" "0.7.0"
-    "@ngtools/webpack" "6.1.0"
+    "@angular-devkit/architect" "0.7.1"
+    "@angular-devkit/build-optimizer" "0.7.1"
+    "@angular-devkit/build-webpack" "0.7.1"
+    "@angular-devkit/core" "0.7.1"
+    "@ngtools/webpack" "6.1.1"
     ajv "~6.4.0"
     autoprefixer "^8.4.1"
     circular-dependency-plugin "^5.0.2"
@@ -62,44 +62,38 @@
   optionalDependencies:
     node-sass "^4.9.1"
 
-"@angular-devkit/build-optimizer@0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/build-optimizer/-/build-optimizer-0.7.0.tgz#83efe0331c3f0ec49586c203a707871135c23501"
+"@angular-devkit/build-optimizer@0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/build-optimizer/-/build-optimizer-0.7.1.tgz#05bb646ab7cc714172fd554bd3e0e1beb7d8becc"
   dependencies:
     loader-utils "^1.1.0"
     source-map "^0.5.6"
     typescript "~2.9.1"
     webpack-sources "^1.1.0"
 
-"@angular-devkit/build-webpack@0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/build-webpack/-/build-webpack-0.7.0.tgz#77505c1936dc9fede9303212a8676e5730ac366a"
+"@angular-devkit/build-webpack@0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/build-webpack/-/build-webpack-0.7.1.tgz#8ad519f598f89214a132207f7f5369cc4b51d18c"
   dependencies:
-    "@angular-devkit/architect" "0.7.0"
-    "@angular-devkit/core" "0.7.0"
+    "@angular-devkit/architect" "0.7.1"
+    "@angular-devkit/core" "0.7.1"
     rxjs "^6.0.0"
 
-"@angular-devkit/core@0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-0.7.0.tgz#6cc5e284be83681534f97f1511a2f0af5101232c"
+"@angular-devkit/core@0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-0.7.1.tgz#a8c2ef8cca34d6918ebe618317fee5b0ec84a1e9"
   dependencies:
     ajv "~6.4.0"
     chokidar "^2.0.3"
     rxjs "^6.0.0"
     source-map "^0.5.6"
 
-"@angular-devkit/schematics@0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/schematics/-/schematics-0.7.0.tgz#23d0f9ed693eeaa9ee97921c064030eca4310c4f"
+"@angular-devkit/schematics@0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/schematics/-/schematics-0.7.1.tgz#4b805c66e38f09553ee953e4c81f993432a582fe"
   dependencies:
-    "@angular-devkit/core" "0.7.0"
+    "@angular-devkit/core" "0.7.1"
     rxjs "^6.0.0"
-
-"@angular/animations@^6.0.0":
-  version "6.0.4"
-  resolved "https://registry.yarnpkg.com/@angular/animations/-/animations-6.0.4.tgz#4e22612e8fed3193983d985c748514a03404bd96"
-  dependencies:
-    tslib "^1.9.0"
 
 "@angular/animations@~6.1.0":
   version "6.1.0"
@@ -119,26 +113,20 @@
   dependencies:
     tslib "^1.7.1"
 
-"@angular/cli@6.1.0":
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/@angular/cli/-/cli-6.1.0.tgz#6a59e95375f60980d5e4b89343dc5dc561a6fe12"
+"@angular/cli@6.1.1":
+  version "6.1.1"
+  resolved "https://registry.yarnpkg.com/@angular/cli/-/cli-6.1.1.tgz#a5d56ad2fbff71bead6b62d0000b1dda4099613d"
   dependencies:
-    "@angular-devkit/architect" "0.7.0"
-    "@angular-devkit/core" "0.7.0"
-    "@angular-devkit/schematics" "0.7.0"
-    "@schematics/angular" "0.7.0"
-    "@schematics/update" "0.7.0"
+    "@angular-devkit/architect" "0.7.1"
+    "@angular-devkit/core" "0.7.1"
+    "@angular-devkit/schematics" "0.7.1"
+    "@schematics/angular" "0.7.1"
+    "@schematics/update" "0.7.1"
     opn "^5.3.0"
     rxjs "^6.0.0"
     semver "^5.1.0"
     symbol-observable "^1.2.0"
     yargs-parser "^10.0.0"
-
-"@angular/common@^6.0.0":
-  version "6.0.4"
-  resolved "https://registry.yarnpkg.com/@angular/common/-/common-6.0.4.tgz#e3d194a1bb1e143044774488d610437a982179fa"
-  dependencies:
-    tslib "^1.9.0"
 
 "@angular/common@~6.1.0":
   version "6.1.0"
@@ -155,21 +143,9 @@
     reflect-metadata "^0.1.2"
     tsickle "^0.30.0"
 
-"@angular/compiler@^6.0.0":
-  version "6.0.4"
-  resolved "https://registry.yarnpkg.com/@angular/compiler/-/compiler-6.0.4.tgz#86d3adc2c915ee98aa8e00c542c2ef1c09f9c61f"
-  dependencies:
-    tslib "^1.9.0"
-
 "@angular/compiler@~6.1.0":
   version "6.1.0"
   resolved "https://registry.yarnpkg.com/@angular/compiler/-/compiler-6.1.0.tgz#b945439fb3cf6a33d297fcb9a08e487f196de901"
-  dependencies:
-    tslib "^1.9.0"
-
-"@angular/core@^6.0.0":
-  version "6.0.4"
-  resolved "https://registry.yarnpkg.com/@angular/core/-/core-6.0.4.tgz#80b19624493126b6c7e3a180a33dee92c84b4bd6"
   dependencies:
     tslib "^1.9.0"
 
@@ -179,21 +155,9 @@
   dependencies:
     tslib "^1.9.0"
 
-"@angular/forms@^6.0.0":
-  version "6.0.4"
-  resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-6.0.4.tgz#abc5ea355b5261c49f111366f41a812aa9d3d1d3"
-  dependencies:
-    tslib "^1.9.0"
-
 "@angular/forms@~6.1.0":
   version "6.1.0"
   resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-6.1.0.tgz#7e62913b07b67d002ebddf735725d2839a6c3a63"
-  dependencies:
-    tslib "^1.9.0"
-
-"@angular/http@^6.0.0":
-  version "6.0.4"
-  resolved "https://registry.yarnpkg.com/@angular/http/-/http-6.0.4.tgz#5598c6eec895014da9242c22236af2757ae9fef1"
   dependencies:
     tslib "^1.9.0"
 
@@ -201,33 +165,15 @@
   version "6.1.0"
   resolved "https://registry.yarnpkg.com/@angular/language-service/-/language-service-6.1.0.tgz#3c73ee95acb5d1b74319d81b01e02701bbd1f539"
 
-"@angular/platform-browser-dynamic@^6.0.0":
-  version "6.0.4"
-  resolved "https://registry.yarnpkg.com/@angular/platform-browser-dynamic/-/platform-browser-dynamic-6.0.4.tgz#3b86f6b826d45418520da583eb8ba0526f62a4bb"
-  dependencies:
-    tslib "^1.9.0"
-
 "@angular/platform-browser-dynamic@~6.1.0":
   version "6.1.0"
   resolved "https://registry.yarnpkg.com/@angular/platform-browser-dynamic/-/platform-browser-dynamic-6.1.0.tgz#b9341c774aacfe7180ceb1bc82c2acb3ab093018"
   dependencies:
     tslib "^1.9.0"
 
-"@angular/platform-browser@^6.0.0":
-  version "6.0.4"
-  resolved "https://registry.yarnpkg.com/@angular/platform-browser/-/platform-browser-6.0.4.tgz#3a86890324fd9de37df8d7195fcedf4145eefb3b"
-  dependencies:
-    tslib "^1.9.0"
-
 "@angular/platform-browser@~6.1.0":
   version "6.1.0"
   resolved "https://registry.yarnpkg.com/@angular/platform-browser/-/platform-browser-6.1.0.tgz#8beb2feb4f072e925b6fbeb8259887335f4a98be"
-  dependencies:
-    tslib "^1.9.0"
-
-"@angular/router@^6.0.0":
-  version "6.0.4"
-  resolved "https://registry.yarnpkg.com/@angular/router/-/router-6.0.4.tgz#81c96dfa42a8c4a218cbd450b1e8959a76ea9595"
   dependencies:
     tslib "^1.9.0"
 
@@ -380,11 +326,11 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@ngtools/webpack@6.1.0":
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/@ngtools/webpack/-/webpack-6.1.0.tgz#69679994edb40f3979a1c2d9cf378f7deffca902"
+"@ngtools/webpack@6.1.1":
+  version "6.1.1"
+  resolved "https://registry.yarnpkg.com/@ngtools/webpack/-/webpack-6.1.1.tgz#dcfea287c0c1358f3e123621c65b0e3ccaab5b70"
   dependencies:
-    "@angular-devkit/core" "0.7.0"
+    "@angular-devkit/core" "0.7.1"
     rxjs "^6.0.0"
     tree-kill "^1.0.0"
     webpack-sources "^1.1.0"
@@ -399,20 +345,20 @@
   dependencies:
     any-observable "^0.3.0"
 
-"@schematics/angular@0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@schematics/angular/-/angular-0.7.0.tgz#54ea079f405a4b33adc62722ca2e4edf881702e0"
+"@schematics/angular@0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@schematics/angular/-/angular-0.7.1.tgz#29db78d148d3260e9bb545c86a4c6bfbaed9e933"
   dependencies:
-    "@angular-devkit/core" "0.7.0"
-    "@angular-devkit/schematics" "0.7.0"
+    "@angular-devkit/core" "0.7.1"
+    "@angular-devkit/schematics" "0.7.1"
     typescript ">=2.6.2 <2.8"
 
-"@schematics/update@0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@schematics/update/-/update-0.7.0.tgz#7fbfaba7630b2b7ad88ebc34a9b36bd4c3d02dd6"
+"@schematics/update@0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@schematics/update/-/update-0.7.1.tgz#56cf82df0bf8f5a0ef75aef94b7a9bc9598d7f51"
   dependencies:
-    "@angular-devkit/core" "0.7.0"
-    "@angular-devkit/schematics" "0.7.0"
+    "@angular-devkit/core" "0.7.1"
+    "@angular-devkit/schematics" "0.7.1"
     npm-registry-client "^8.5.1"
     rc "^1.2.8"
     rxjs "^6.0.0"
@@ -437,9 +383,9 @@
   version "6.0.111"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-6.0.111.tgz#85f880a1bab78d395a5de9bcb5319e73a0c31400"
 
-"@types/node@~8.10.21":
-  version "8.10.21"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.10.21.tgz#12b3f2359b27aa05a45d886c8ba1eb8d1a77e285"
+"@types/node@~8.10.22":
+  version "8.10.22"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.10.22.tgz#c095d7c668908d48b95ae11fcc4a6d6b1c116a35"
 
 "@types/q@^0.0.32":
   version "0.0.32"
@@ -1846,7 +1792,7 @@ copy-webpack-plugin@^4.5.2:
     p-limit "^1.0.0"
     serialize-javascript "^1.4.0"
 
-core-js@^2.2.0, core-js@^2.4.0, core-js@^2.5.0, core-js@^2.5.4, core-js@^2.5.7:
+core-js@^2.2.0, core-js@^2.4.0, core-js@^2.5.0, core-js@^2.5.7:
   version "2.5.7"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.5.7.tgz#f972608ff0cead68b841a16a932d0b183791814e"
 
@@ -3064,29 +3010,6 @@ ftp@~0.3.10:
 function-bind@^1.0.2, function-bind@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
-
-g2-angular@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/g2-angular/-/g2-angular-2.0.1.tgz#c31b376e2236566113be3d4e0e3dc5cae97454d1"
-  dependencies:
-    "@angular/animations" "^6.0.0"
-    "@angular/common" "^6.0.0"
-    "@angular/compiler" "^6.0.0"
-    "@angular/core" "^6.0.0"
-    "@angular/forms" "^6.0.0"
-    "@angular/http" "^6.0.0"
-    "@angular/platform-browser" "^6.0.0"
-    "@angular/platform-browser-dynamic" "^6.0.0"
-    "@angular/router" "^6.0.0"
-    core-js "^2.5.4"
-    g2 "^2.3.13"
-    ngx-highlight-js "^2.0.2"
-    rxjs "^6.0.0"
-    zone.js "^0.8.26"
-
-g2@^2.3.13:
-  version "2.3.13"
-  resolved "https://registry.yarnpkg.com/g2/-/g2-2.3.13.tgz#ca4478230f3292bd3b9a972da63616980b8f6ce9"
 
 gauge@~2.7.3:
   version "2.7.4"
@@ -5163,23 +5086,6 @@ ng-zorro-antd@^1.2.0:
   dependencies:
     "@angular/cdk" "^6.0.0"
     date-fns "^1.29.0"
-
-ngx-highlight-js@^2.0.2:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/ngx-highlight-js/-/ngx-highlight-js-2.0.3.tgz#cf629cafaec296755ec58cdfa2b5fde4e97f6d65"
-  dependencies:
-    "@angular/animations" "^6.0.0"
-    "@angular/common" "^6.0.0"
-    "@angular/compiler" "^6.0.0"
-    "@angular/core" "^6.0.0"
-    "@angular/forms" "^6.0.0"
-    "@angular/http" "^6.0.0"
-    "@angular/platform-browser" "^6.0.0"
-    "@angular/platform-browser-dynamic" "^6.0.0"
-    "@angular/router" "^6.0.0"
-    core-js "^2.5.4"
-    rxjs "^6.0.0"
-    zone.js "^0.8.26"
 
 nice-try@^1.0.4:
   version "1.0.4"

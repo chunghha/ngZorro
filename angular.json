@@ -24,9 +24,7 @@
               "node_modules/ng-zorro-antd/src/ng-zorro-antd.min.css",
               "src/styles.scss"
             ],
-            "scripts": [
-              "node_modules/g2/index.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -72,9 +70,7 @@
             "karmaConfig": "./karma.conf.js",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.spec.json",
-            "scripts": [
-              "node_modules/g2/index.js"
-            ],
+            "scripts": [],
             "styles": [
               "node_modules/ng-zorro-antd/src/ng-zorro-antd.min.css",
               "src/styles.scss"
