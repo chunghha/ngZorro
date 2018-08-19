@@ -32,11 +32,11 @@
     </ul>
   </nz-sider>
   <nz-layout>
-    <nz-header style="background: #fff; padding:0;">
-      <i class="anticon trigger" [class.anticon-menu-fold]="!isCollapsed" [class.anticon-menu-unfold]="isCollapsed" (click)="isCollapsed=!isCollapsed"></i>
+    <nz-header style="background: #fff; padding-left: 16px;">
+      <i class="anticon tigger" [class.anticon-menu-fold]="!isCollapsed" [class.anticon-menu-unfold]="isCollapsed" (click)="isCollapsed=!isCollapsed"></i>
       <div nz-row [nzType]="'flex'" [nzJustify]="'end'">
         <nz-badge [nzCount]="5" style="margin-right: 24px;">
-          <ng-template #content><nz-avatar nzIcon="user" [nzShape]="'square'"></nz-avatar></ng-template>
+          <nz-avatar nzIcon="anticon anticon-user" [nzShape]="'square'"></nz-avatar>
         </nz-badge>
       </div>
     </nz-header>
