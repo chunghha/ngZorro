@@ -1,26 +1,47 @@
 $primary-color: #005daa;
 
-:host ::ng-deep .logo {
+.logo {
   height: 32px;
-  background: #f7f7f7;
+  width: 80%;
+  background: #f2f2f2;
   border-radius: 2px;
-  margin: 16px;
+  margin: 16px 8px;
 }
 
-:host ::ng-deep .ant-layout-sider-collapsed .nav-text {
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+::ng-deep .ant-layout-sider {
+  margin-right: 8px;
+}
+
+::ng-deep .ant-layout-sider-children {
+  background: #fff;
+}
+
+::ng-deep .ant-layout-sider-trigger {
+  background: #fff;
+  color: #111;
+
+}
+
+::ng-deep .ant-layout-sider-collapsed .nav-text {
   display: none;
 }
 
-:host ::ng-deep .ant-layout-sider-collapsed .ant-menu-submenu-title::after {
+::ng-deep .ant-layout-sider-collapsed .ant-menu-submenu-title::after {
   display: none;
 }
 
-:host ::ng-deep .ant-layout-sider-collapsed .anticon {
+::ng-deep .ant-layout-sider-collapsed .anticon {
   font-size: 16px;
   margin-left: 8px;
 }
 
-:host ::ng-deep .trigger {
+::ng-deep .trigger {
   font-size: 18px;
   line-height: 64px;
   padding: 0 16px;
@@ -28,15 +49,15 @@ $primary-color: #005daa;
   transition: color 0.3s;
 }
 
-:host ::ng-deep .trigger:hover {
+::ng-deep .trigger:hover {
   color: $primary-color;
 }
 
-:host ::ng-deep .ant-back-top {
+::ng-deep .ant-back-top {
   bottom: 6px;
 }
 
-:host ::ng-deep .ant-back-top-inner {
+::ng-deep .ant-back-top-inner {
   margin-left: 12px;
   height: 24px;
   width: 64px;
@@ -47,4 +68,3 @@ $primary-color: #005daa;
   text-align: center;
   font-size: 0.8rem;
 }
-
